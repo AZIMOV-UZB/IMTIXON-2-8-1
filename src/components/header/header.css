@@ -1,0 +1,111 @@
+.navbar__menu{
+    display: none;
+}
+
+@media (max-width:990px) {
+    .nav__collect {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: -500px;
+        background-color: #afa5a5d0;
+        width: 60%;
+        padding: 20px;
+        height: 100%;
+        transition: .6s;
+        z-index: 101;
+
+    }
+
+    .nav__collect.show {
+        left: 0;
+    }
+
+    .img {
+        height: 150px;
+    }
+
+
+    .navbar {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        color: #0009;
+        align-items: center;
+    }
+    .navbar__menu {
+        display: block;
+    }
+    .navbar__number{
+        display: none;
+    }
+   
+}
+
+.header{
+    background: #fff;
+    position: sticky !important;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    -webkit-backdrop-filter: blur(6px);
+    backdrop-filter: blur(6px);
+}
+
+.nav__collect.show {
+    left: 0;
+}
+
+
+
+@media (max-width:1100px) {
+    .bag{
+        width: 600px;
+    }
+}
+
+
+
+
+@media (max-width:1020px) {
+    .bag{
+    display: none;
+    }
+}
+
+
+
+
+@media (max-width:610px) {
+    .saytbar{
+        display: none;
+    }
+    .img {
+        height: 100px;
+    }
+
+
+    .logo{
+        width:100px;
+        }
+        .uzb{
+            width: 15px;
+            height: 15px;
+        }
+
+        .text{
+           font-size: 18px;
+        }
+
+        .boob{
+            font-size: 10px;
+         }
+         .lg{
+            font-size: 10px;
+         }
+
+         .title{
+            font-size: 20px;
+         }
+}

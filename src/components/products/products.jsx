@@ -66,7 +66,7 @@ const Products = ({ data, isLoading }) => {
 
               </div>
               <ToastContainer
-            position="bottom-center"
+            position="top-center"
             autoClose={5000}
             limit={3}
               />

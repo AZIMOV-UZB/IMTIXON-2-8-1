@@ -41,7 +41,7 @@ const Cartproducts = ({ data }) => {
                   <div className=" p-[6px]  items-center justify-center mb-[20px] relative">
                     <button
                       onClick={() => dispatch(removeFromCart(el))}
-                      className="absolute lg:top-[-12px] lg:left-[-20px]"
+                      className="absolute  lg:left-[-10px] text-2xl hover:text-red-600"
                     >
                       <IoMdClose />
                     </button>

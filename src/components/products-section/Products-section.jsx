@@ -38,7 +38,6 @@ const ProductsSection = () => {
     <div className="container">
       <div className="flex gap-4">
         <Saytbar/> 
-
 <div>
   <Carousel/>
       <div className=" flex gap-2 items-center m-4 ml-5">

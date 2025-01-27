@@ -35,16 +35,16 @@ const Qurulma = () => {
                 <div className="  flex gap-6 mt-8 mb-12 flex-wrap ">
                     {
                         data?.map((item) => (
-                            <div className='p-4 shadow-md bg-slate-100 rounded-xl max-w-[320px] ' key={item.id}>
-                                <div className=' border rounded-lg'>
+                            <div className='shadow-md bg-slate-100 max-w-[250px] ' key={item.id}>
+                                <div className=' border-2 border-[#ddd] rounded-lg'>
                                       <img
                                                        src={baner}
                                                       alt="foto"
                                                     />
                                                     </div>
-                                <div className=' pt-3 '>
-                                    <p className='text-2xl font-bold'>{item.text}</p>
-                                    <p className='text-sm px-2'> {item.descripshin}</p>
+                                <div className='p-3 '>
+                                    <p className='text-[18px] font-bold'>{item.text}</p>
+                                    <p className='text-sm'> {item.descripshin}</p>
                                 </div>
                             </div>
 

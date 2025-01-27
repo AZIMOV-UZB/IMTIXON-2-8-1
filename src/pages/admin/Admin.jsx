@@ -24,10 +24,13 @@ const Admin = () => {
           </Link>
 
 
+          <Link to={"yordam"}>
 
           <p className='text-[20px]  hover:text-green-500'>
             Yordam kerakmi ?
           </p>
+          </Link>
+
 
           <hr />
 

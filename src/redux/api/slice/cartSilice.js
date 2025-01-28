@@ -40,6 +40,15 @@ const cartSlice = createSlice({
       state.value = [];
       localStorage.removeItem("cart");
     },
+    deleteAllCart: (state) => {
+      state.value = [];
+      localStorage.removeItem("user");
+    },
+
+    deleteAllCart: (state) => {
+      state.value = [];
+      localStorage.removeItem("qur");
+    },
   },
 });
 

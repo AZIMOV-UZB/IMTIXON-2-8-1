@@ -19,7 +19,7 @@ const Cartproducts = ({ data }) => {
     <>
       <div className="container  ">
         <Link to={"/"}>
-          <div className="flex items-center gap-2 mb-[30px] mt-[40px] w-[250px] p-2   bg-green-500 hover:bg-red-500 hover:rounded-lg">
+          <div  className="flex items-center gap-2 mb-[30px] mt-[40px] w-[250px] p-2   bg-green-500 hover:bg-red-500 hover:rounded-lg">
             <FaLongArrowAltLeft className="text-white text-2xl" />
             <p className="text-[15px]  text-white text-3xl font-bold">
               Back to Shopping

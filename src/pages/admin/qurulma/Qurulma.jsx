@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import baner from "../../../assets/images/qur.webp"
 
+
 const Qurulma = () => {
     const [data, setDAta] = useState([]);
     const [text, setText] = useState("")

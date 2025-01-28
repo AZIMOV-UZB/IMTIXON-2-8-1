@@ -9,6 +9,7 @@ import Admin from "./pages/admin/Admin";
 import NotFound from "./pages/not-found/NotFound";
 import Qurulma from "./pages/admin/qurulma/Qurulma";
 import Yordam from "./pages/admin/yordam/Yordam";
+import User from "./pages/admin/user/User";
 
 function App() {
   const cart = useSelector((state) => state.cart.value);
@@ -24,6 +25,7 @@ function App() {
           <Route path="*" element={<NotFound/>} />
           <Route path="products/:id" element={<SinglProdutc />} />
           <Route path="/Admin/*" element={<Admin />}>
+          <Route path="user" element={<User/>} />
           <Route path="qurulmalaringiz" element={<Qurulma/>} />
           <Route path="yordam" element={<Yordam/>} />
         </Route>         

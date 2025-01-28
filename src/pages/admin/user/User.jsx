@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import baner from "../../assets/images/uch.webp";
+import { FaUserCircle } from "react-icons/fa";
 
 const User = () => {
     const [data, setDAta] = useState([]);
@@ -23,33 +23,43 @@ const User = () => {
         setDescripshin("")
     }
     return (
-        <div className=' bg-cyan-400	'>
-            <div className='container mx-auto py-10'>
-                <form className='flex flex-col items-center gap-5 w-72 m-auto border border-solid p-4 shadow-xl bg-zinc-50 rounded-sm' onSubmit={handleCreate}>
-                    <input className='border pl-2 w-full rounded-lg outline-none text-sm py-1 bg-teal-50' type="text" placeholder='title' required value={text} onChange={(event) => setText(event.target.value)} />
-                    <input className='border pl-2 w-full rounded-lg outline-none text-sm py-1 bg-teal-50' type="number" placeholder='phone number : 998' required value={number} onChange={(event) => setNumber(event.target.value)} />
-                    <input className='border pl-2 w-full rounded-lg outline-none text-sm py-1 bg-teal-50' type="number" placeholder='price' required value={price} onChange={(event) => setPrice(event.target.value)} />
-                    <input className='border pl-2 w-full rounded-lg outline-none text-sm py-1 bg-teal-50' type="text" placeholder='descripshin' required value={descripshin} onChange={(event) => setDescripshin(event.target.value)} />
-                    <button className='w-1/2 border rounded-lg bg-cyan-400 py-1 text-gray-50'>create</button>
+        <div className=' bg-white rounded-lg'>
+            <div className='container mx-auto p-10'>
+                <p>Sizning profilingiz</p>
+                <form className='my-6 items-center max-w-[600px] p-4 shadow-xl   lg:gap-2 grid grid-cols-1   sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-2' onSubmit={handleCreate}>
+                    <div >
+                        <p>Ism Familangiz</p>
+                        <input className='mt-2 border pl-2 w-full rounded-lg outline-none text-sm py-1 bg-[#F6F8FA]' type="text" placeholder='ism familya' required value={text} onChange={(event) => setText(event.target.value)} />
+                    </div>
+                    <div>
+                        <p>Shaxar</p>
+                        <input className='mt-2  border pl-2 w-full rounded-lg outline-none text-sm py-1 bg-[#F6F8FA]' type="text" placeholder='shahar' required value={descripshin} onChange={(event) => setDescripshin(event.target.value)} />
+                    </div>
+                    <div>
+                        <p>Uy manzil</p>
+                        <input className='mt-2 border pl-2 w-full rounded-lg outline-none text-sm py-1 bg-[#F6F8FA]' type="text" placeholder='uy ' required value={price} onChange={(event) => setPrice(event.target.value)} />
+                    </div>
+                    <div>
+                        <p>Tel raqami</p>
+                        <input className='mt-2 border pl-2 w-full rounded-lg outline-none text-sm py-1 bg-[#F6F8FA]' type="number" placeholder='phone number : 998' required value={number} onChange={(event) => setNumber(event.target.value)} />
+                    </div>
+                    <button className=' w-1/2 border rounded-lg bg-black py-1 text-gray-50'>Saqlash</button>
                 </form>
-                <div className=" w-full flex gap-6 mt-8 mb-12 flex-wrap justify-center ">
+                <div className=" w-full flex gap-6 mt-8 mb-12 flex-wrap  ">
                     {
                         data?.map((item) => (
                             <div className=' main__card p-4 shadow-md bg-slate-100 rounded-xl w-96 ' key={item.id}>
                                 <div className='w-full'>
-                                      <img
-                                                      className=" h-full "
-                                                      src={baner}
-                                                      alt="foto"
-                                                    />
-                                                    </div>
-                                <div className='text-center pt-3 flex flex-col gap-3'>
+                                    <FaUserCircle className='text-7xl' />
+                                </div>
+                                <div className=' pt-3 flex flex-col gap-3'>
                                     <p className='text-2xl font-bold	'>{item.text}</p>
+                                    <p className='text-xl font-[600]'> {item.descripshin}</p>
+                                    <p className='text-xl'> {item.price}</p>
                                     <p className='text-xl '>{item.number}</p>
-                                    <p className='text-base '>PRICE : {item.price}$</p>
-                                    <p className='text-sm'> {item.descripshin}</p>
                                 </div>
                             </div>
+
                         ))
                     }
                 </div>

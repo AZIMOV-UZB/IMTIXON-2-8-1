@@ -64,12 +64,14 @@ const Products = ({ data, isLoading }) => {
                   <p className="text-[#fff] font-[500] text-[18px]" onClick={notify}>Savatchaga</p>
                 </button>
 
+                <ToastContainer
+                  position="top-center"
+                  autoClose={5000}
+                  limit={3}
+
+
+                />
               </div>
-              <ToastContainer
-            position="top-center"
-            autoClose={5000}
-            limit={3}
-              />
 
             </div>
 
